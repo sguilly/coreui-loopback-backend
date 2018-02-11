@@ -1,0 +1,52 @@
+{
+    "name": "user",
+    "plural": "user",
+    "base": "User",
+    "mixins": { "Timestamp": {}, "FilterByCustomer": {} },
+    "options": {
+        "validateUpsert": true
+    },
+    "mixins": {
+
+    },
+    "properties": {
+        "email": {
+            "type": "string",
+            "required": false
+        },
+        "password": {
+            "type": "string",
+            "required": false
+        }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [{
+            "accessType": "*",
+            "principalType": "ROLE",
+            "principalId": "$everyone",
+            "permission": "ALLOW",
+            "property": "whoami"
+        },
+        {
+            "accessType": "*",
+            "principalType": "ROLE",
+            "principalId": "$everyone",
+            "permission": "ALLOW",
+            "property": "login"
+        },
+        {
+            "accessType": "*",
+            "principalType": "ROLE",
+            "principalId": "$everyone",
+            "permission": "DENY"
+        },
+        {
+            "accessType": "*",
+            "principalType": "ROLE",
+            "principalId": "$authenticated",
+            "permission": "ALLOW"
+        }
+    ],
+    "methods": {}
+}

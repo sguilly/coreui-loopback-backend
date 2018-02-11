@@ -1,0 +1,14 @@
+{
+    "apps": [
+
+        {
+            "name": "rest-api-13000",
+            "script": "./server/server.js",
+            "instances": 1,
+            "exec_mode": "fork",
+            "env": {
+                "CUSTOM_PORT": 13000
+            }
+        }
+    ]
+}

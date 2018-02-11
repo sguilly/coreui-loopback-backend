@@ -1,0 +1,41 @@
+{
+    "name": "coreui-loopback-backend",
+    "version": "1.0.0",
+    "main": "server/server.js",
+    "engines": {
+        "node": ">=4"
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "start": "node .",
+        "dev": "STAGE=DEV nodemon server/server.js",
+        "posttest": "npm run lint && nsp check"
+    },
+    "dependencies": {
+        "app-root-path": "^2.0.1",
+        "bunyan": "^1.8.12",
+        "bunyan-format": "^0.2.1",
+        "compression": "^1.0.3",
+        "cors": "^2.5.2",
+        "helmet": "^3.11.0",
+        "json.date-extensions": "^1.2.2",
+        "loopback": "^3.0.0",
+        "loopback-boot": "^2.6.5",
+        "loopback-component-explorer": "^5.0.0",
+        "loopback-connector-mongodb": "1.18.1",
+        "serve-favicon": "^2.0.1",
+        "shortid": "^2.2.8",
+        "strong-error-handler": "^2.0.0"
+    },
+    "devDependencies": {
+        "eslint": "^4.17.0",
+        "eslint-config-loopback": "^10.0.0",
+        "nsp": "^3.1.0"
+    },
+    "repository": {
+        "type": "",
+        "url": ""
+    },
+    "license": "MIT",
+    "description": "A REST API FOR A COREUI ADMIN FRONTEND PROVIDED BY LOOPBACK 3.x"
+}

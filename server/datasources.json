@@ -1,0 +1,19 @@
+{
+    "db": {
+        "host": "",
+        "port": 0,
+        "url": "",
+
+        "database": "",
+        "password": "",
+        "name": "db",
+        "user": "",
+        "connector": "mongodb",
+
+        "auto_reconnect": true,
+        "autoReconnect": true,
+        "reconnectTries": 2000,
+        "reconnectInterval": 1000
+
+    }
+}
